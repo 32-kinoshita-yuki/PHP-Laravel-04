@@ -1,13 +1,21 @@
 <?php
-echo 'hello php!';
 echo ("\n");
-//1
-$name = "yuki";
-if($name = "yuki"){
-  echo "「私は ゆき です」";
+
+//1　elseを使った例文
+$name = 'yuki';
+if ($name === 'hanako') {
+  echo '「私は はなこ です」' ;
+} else {
+ echo '「私はゆきではありません」';
 }
-else {
-  "「私はゆきではありません」";
+echo ("\n");
+
+//1 別解　elseifを使った例文
+$name = 'yuki';
+if ($name === 'hanako' ) {
+  echo '「私ははなこです';
+} elseif ($name =='yuki') { 
+echo '「私はゆきです」';
 }
 echo ("\n");
 
@@ -19,12 +27,16 @@ for ($i = 1; $i <= 10000; $i++) {
 }
 echo $total ;
 echo ("\n");
+echo ("\n");
 //3 
 $fruits = array("Apple","Banana","Orange","peach","Grapes");
 foreach($fruits as $fruit){
+  
 echo $fruit; 
 echo ("\n");
+
 }
+echo ("\n");
 //4
 //for文の始めの値を定義する //
 $start = 1;
@@ -36,7 +48,7 @@ for ($i = $start; $i <= $end; $i++) {
 if (($i % 5) == 0) {
   echo $i;
   echo ("\n");
-}}
+}
+}
 
 
-?>
